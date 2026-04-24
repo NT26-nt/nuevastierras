@@ -71,7 +71,7 @@ const fmt = (n) => n !== null && n !== '' && !isNaN(n) ? '$' + Math.round(parseF
 const fmtKg = (n) => n !== null && n !== '' && !isNaN(n) ? parseFloat(n).toLocaleString('es-AR') + ' kg' : '-';
 const num = (n) => (n !== null && n !== '' && !isNaN(n)) ? parseFloat(n) : 0;
 
-const pctFact = num(p.get('pctfact')) / 100;
+const pctFact = num(p.get('pctfact'));
 
 document.getElementById('cliente').textContent = p.get('cliente') || '-';
 document.getElementById('cuit').textContent = p.get('cuit') || '-';
